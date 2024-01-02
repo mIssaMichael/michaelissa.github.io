@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+<title>Bayes - Michael Issa</title>
+
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='webpage_include\css\style.css' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #111;--wp--preset--color--light-gray: #f1f1f1;--wp--preset--color--yellow: #f4ca16;--wp--preset--color--dark-brown: #352712;--wp--preset--color--medium-pink: #e53b51;--wp--preset--color--light-pink: #ffe5d1;--wp--preset--color--dark-purple: #2e2256;--wp--preset--color--purple: #674970;--wp--preset--color--blue-gray: #22313f;--wp--preset--color--bright-blue: #55c3dc;--wp--preset--color--light-blue: #e9f2f9;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--dark-gray-gradient-gradient: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(42,42,42,1) 100%);--wp--preset--gradient--light-gray-gradient: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(215,215,215,1) 100%);--wp--preset--gradient--white-gradient: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);--wp--preset--gradient--yellow-gradient: linear-gradient(90deg, rgba(244,202,22,1) 0%, rgba(205,168,10,1) 100%);--wp--preset--gradient--dark-brown-gradient: linear-gradient(90deg, rgba(53,39,18,1) 0%, rgba(91,67,31,1) 100%);--wp--preset--gradient--medium-pink-gradient: linear-gradient(90deg, rgba(229,59,81,1) 0%, rgba(209,28,51,1) 100%);--wp--preset--gradient--light-pink-gradient: linear-gradient(90deg, rgba(255,229,209,1) 0%, rgba(255,200,158,1) 100%);--wp--preset--gradient--dark-purple-gradient: linear-gradient(90deg, rgba(46,34,86,1) 0%, rgba(66,48,123,1) 100%);--wp--preset--gradient--purple-gradient: linear-gradient(90deg, rgba(103,73,112,1) 0%, rgba(131,93,143,1) 100%);--wp--preset--gradient--blue-gray-gradient: linear-gradient(90deg, rgba(34,49,63,1) 0%, rgba(52,75,96,1) 100%);--wp--preset--gradient--bright-blue-gradient: linear-gradient(90deg, rgba(85,195,220,1) 0%, rgba(43,180,211,1) 100%);--wp--preset--gradient--light-blue-gradient: linear-gradient(90deg, rgba(233,242,249,1) 0%, rgba(193,218,238,1) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='googlefonts-css' href='https://fonts.googleapis.com/css?family=Quattrocento:400|Playfair+Display+SC:400&subset=latin' media='all' />
+<link rel='stylesheet' id='ngg_trigger_buttons-css' href='wp-content-bayes/plugins/nextgen-gallery/GalleryDisplay/trigger_buttons.css' media='all' />
+<link rel='stylesheet' id='simplelightbox-0-css' href='wp-content-bayes/plugins/nextgen-gallery/Lightbox/simplelightbox/simple-lightbox.css' media='all' />
+<link rel='stylesheet' id='fontawesome_v4_shim_style-css' href='wp-content-bayes/plugins/nextgen-gallery/FontAwesome/css/v4-shims.min.css.css' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='wp-content-bayes/plugins/nextgen-gallery/FontAwesome/css/all.min.css.css' media='all' />
+<link rel='stylesheet' id='nextgen_pagination_style-css' href='wp-content-bayes/plugins/nextgen-gallery/GalleryDisplay/pagination_style.css' media='all' />
+<link rel='stylesheet' id='nextgen_basic_thumbnails_style-css' href='wp-content-bayes/plugins/nextgen-gallery/Thumbnails/nextgen_basic_thumbnails.css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css' href='wp-content-bayes/themes/assets/noto-sans-plus-noto-serif-plus-inconsolata.css' media='all' />
+<link rel='stylesheet' id='genericons-css' href='wp-content-bayes/themes/genericons/genericons.css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css' href='wp-content-bayes/themes/style.css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-block-style-css' href='wp-content-bayes/themes/css/blocks.css' media='all' />
+<link rel='stylesheet' id='font-awesome-official-css' href='https://use.fontawesome.com/releases/v5.14.0/css/all.css' media='all' integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+<link rel='stylesheet' id='js_composer_front-css' href='wp-content-bayes/plugins/js_composer/css/js_composer.min.css' media='all' />
+<link rel='stylesheet' id='js_composer_custom_css-css' href='wp-content-bayes/upload/custom.css' media='all' />
+<link rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css' media='all' integrity="sha384-9aKO2QU3KETrRCCXFbhLK16iRd15nC+OYEmpVb54jY8/CEXz/GVRsnM73wcbYw+m" crossorigin="anonymous" />
+<style id='font-awesome-official-v4shim-inline-css'>
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-brands-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-solid-900.eot"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-regular-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+</style>
+<script data-cfasync="false" data-wpfc-render="false" id='exactmetrics-frontend-script-js-extra'>var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"zip,ra,mp,avi,flv,mpeg,pdf,doc,ppt,xls,jp,png,gif,tiff,bmp,txt","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/michaelissa.com","hash_tracking":"false","v4_id":"G-1KDFNMV8PB"};</script>
+<script data-cfasync="false" data-wpfc-render="false" id='monsterinsights-frontend-script-js-extra'>var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/michaelissa.com","hash_tracking":"false","v4_id":"G-1KDFNMV8PB"};</script>
+<script src="webpage_include/js/jquery/jquery.js" id="jquery-core-js"></script>
+<script src="webpage_include/js/jquery/jquery-migrate.js" id="jquery-migrate-js"></script>
+<script id="photocrati_ajax-js-extra">
+var photocrati_ajax = {"url":"https:\/\/michaelissa.com\/index.php?photocrati_ajax=1","rest_url":"https:\/\/michaelissa.com\/wp-json\/","wp_home_url":"https:\/\/michaelissa.com","wp_site_url":"https:\/\/michaelissa.com","wp_root_url":"https:\/\/michaelissa.com","wp_plugins_url":"https:\/\/michaelissa.com\/wp-content-bayes\/plugins","wp_content_url":"https:\/\/michaelissa.com\/wp-content-bayes","wp_includes_url":"https:\/\/michaelissa.com\/webpage_include\/","ngg_param_slug":"nggallery"};
+</script>
+<script src="wp-content-bayes/plugins/nextgen-gallery/Legacy/ajax.min.js" id="photocrati_ajax-js"></script>
+<script src="wp-content-bayes/plugins/nextgen-gallery/FontAwesome/js/v4-shims.min.js" id="fontawesome_v4_shim-js"></script>
+<script defer crossorigin="anonymous" data-auto-replace-svg="false" data-keep-original-source="false" data-search-pseudo-elements src="wp-content-bayes/plugins/nextgen-gallery/FontAwesome/js/all.min.js" id="fontawesome-js"></script>
+<script src="wp-content-bayes/plugins/nextgen-gallery/Thumbnails/nextgen_basic_thumbnails.js" id="nextgen_basic_thumbnails_script-js"></script>
+<script src="wp-content-bayes/plugins/nextgen-gallery/Thumbnails/ajax_pagination.js" id="nextgen-basic-thumbnails-ajax-pagination-js"></script>
+<script id="twentyfifteen-script-js-extra">
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+</script>
+<script src="wp-content-bayes/themes/js/functions.js" id="twentyfifteen-script-js" defer data-wp-strategy="defer"></script>
+<style type='text/css' media='screen'>
+	.site-title { font-family: 'Computer Modern Serif', serif; }
+.site-description { font-family: 'Computer Modern Serif', serif; }
+.vc_tta-title-text { font-family: 'Computer Modern Serif', serif; font-style: normal !important;}
+h4 {font-style: normal !important;}
+	color: #333 !important;
+</style>
+<style id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+	<link rel="icon" href="https://michaelissa.com/wp-content/uploads/2014/07/cropped-Screen-Shot-2017-06-21-at-8.23.14-PM-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://michaelissa.com/wp-content/uploads/2014/07/cropped-Screen-Shot-2017-06-21-at-8.23.14-PM-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://michaelissa.com/wp-content/uploads/2014/07/cropped-Screen-Shot-2017-06-21-at-8.23.14-PM-180x180.png" />
+<meta name="msapplication-TileImage" content="https://michaelissa.com/wp-content/uploads/2014/07/cropped-Screen-Shot-2017-06-21-at-8.23.14-PM-270x270.png" />
+		<style id="wp-custom-css">
+			/* LINK TO FONTS */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+	
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400&display=swap');
+
+@import
+url('http://spratt.github.io/Computer-Modern/cmserif.css');
+
+@import
+url('http://spratt.github.io/Computer-Modern/cmsans.css');
+
+@import
+url('https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css');
+
+/* CSS STYLE TAGS */
+body, h1, h2, h3, h4, h5, h6, p, .vc_tta-title-text {
+	font-family: 'Computer Modern Serif', 'EB Garamond', serif;
+	color: #333;
+	font-weight: 100;
+	line-height: 1.6 !important;
+}
+.site-title, .entry-title, .site-description, .page {
+	font-family: 'Computer Modern Serif', 'EB Garamond', serif;
+	font-style: normal;
+	font-weight: 100;
+	color: #333;
+	line-height: 1.6;
+}
+.site-title a {
+	font-size: 28px;
+	text-transform: uppercase;
+}
+.site-description {
+	font-size: 18px;
+}
+.entry-title {
+	font-weight: normal !important;
+	font-size: 30px;
+}
+.nav-menu {
+	font-size: 20px;
+}
+.vc_tta-title-text {
+	font-size: 18px;
+}
+h4 {
+	font-size: 20px !important;
+	line-height: 1.4 !important;
+}
+p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+.custom-html-widget {
+	margin-top: -60px;
+	background: white;
+}
+.main-navigation {
+	margin-top: -50px;
+}
+.site-main {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.type-page {
+	margin-left: 0px;
+	width: 40em;
+}
+
+@media only screen and (max-width: 600px) {
+	.type-page {
+		margin: auto;
+		width: 30em;
+	}
+.main-navigation {
+	margin-top: 0px;
+}	
+.custom-html-widget {
+	margin-top: 0px;
+	background: white;
+}	
+}
+
+@media only screen and (max-width: 400px) {
+	.type-page {
+		margin: auto;
+		width: 22em;
+	}
+.main-navigation {
+	margin-top: 0px;
+}	
+.custom-html-widget {
+	margin-top: 0px;
+	background: white;
+}		
+}
+
+		</style>
+		<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+
+				}
+			</style></head>
+
+<body class="page-template-default page page-id-1098 custom-background wp-embed-responsive wpb-js-composer js-comp-ver-7.1 vc_responsive">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">
+		Skip to content	</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header">
+			<div class="site-branding">
+										<p class="site-title"><a href="index.html" rel="home">Michael Issa</a></p>
+												<p class="site-description">Aspiring Statistician</p>
+										<button class="secondary-toggle">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+					<nav id="site-navigation" class="main-navigation">
+                        <div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav-menu"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="about.html">About Me</a></li>
+                            <li id="menu-item-1619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1619"><a href="blog.html">Blog</a></li>
+                            <li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="models.html"> Models</a></li>
+                            <li id="menu-item-475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475"><a href="resume.html">Resume</a></li>
+                            <li id="menu-item-482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-482"><a href="projects.html">Projects</a></li>
+                            <li id="menu-item-1435" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1098 current_page_item menu-item-1435"><a href="bayes.html" aria-current="page">Bayes</a></li>
+</ul></div>			</nav><!-- .main-navigation -->
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+<i class="fas fa-map-marker fa-sm"></i> &nbsp San Diego, CA
+<br/>
+<i class="fab fa-github fa-sm"></i>&nbsp<a href="https://github.com/mIssaMichael" style="text-decoration: none !important;" target="_blank" rel="noopener">Github</a>
+<br/>
+
+<i class="fab fa-linkedin"></i>&nbsp<a href="https://www.linkedin.com/in/michael-issa-aa66a11b1/" target="_blank" rel="noopener">LinkedIn</a>
+<br/></div></aside>			</div><!-- .widget-area -->
+
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+		
+<article id="post-1098" class="post-1098 page type-page status-publish hentry">
+	
+	<header class="entry-header">
+		<h1 class="entry-title">Bayes</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="wpb-content-wrapper"><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<blockquote><p>
+				The love of a dog for his master is notorious; in the agony of death he has been known to caress his master, and everyone has heard of the dog suffering under vivisection, who licked the hand of the operator; this man, unless he had a heart of stone, must have felt remorse to the last hour of his life.”<br />
+—Charles Darwin, <em>Descent of Man, 40</em>
+</p></blockquote>
+<p>Here are some photos of my dog Bayes for your enjoyment.</p>
+<p></p>
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<!-- default-view.php -->
+<div
+	class="ngg-galleryoverview default-view 
+		"
+	id="ngg-gallery-521bdaba9874b0d8f8bf32d640b829a7-1">
+
+		<!-- Thumbnails -->
+				<div id="ngg-image-0" class="ngg-gallery-thumbnail-box 
+								ngg-3-columns			" 
+			>
+						<div class="ngg-gallery-thumbnail">
+			<a href="wp-content-bayes/photos/default/Bayes pic 2.jpg"
+				title=""
+				data-src="wp-content-bayes/photos/default/Bayes pic 2.jpg"
+				data-thumbnail="wp-content-bayes/photos/thumbnails/Bayes pic 2 resize.jpg"
+				data-image-id="39"
+				data-title="Philip Glass"
+				data-description=""
+				data-image-slug="43-sketchbook-2011-b"
+				class="ngg-simplelightbox" rel="521bdaba9874b0d8f8bf32d640b829a7">
+				<img
+					title="Philip Glass"
+					alt="Philip Glass"
+					src="wp-content-bayes/photos/thumbnails/Bayes pic 2 resize.jpg"
+					width="240"
+					height="160"
+					style="max-width:100%;"
+				/>
+			</a>
+		</div>
+							</div> 
+
+				<div id="ngg-image-1" class="ngg-gallery-thumbnail-box 
+							ngg-3-columns			" 
+		>
+					<div class="ngg-gallery-thumbnail">
+		<a href="wp-content-bayes/photos/default/IMG_1282.PNG"
+			title=""
+			data-src="wp-content-bayes/photos/default/IMG_1282.PNG"
+			data-thumbnail="wp-content-bayes/photos/thumbnails/IMG_1282 (1).png"
+			data-image-id="39"
+			data-title="Philip Glass"
+			data-description=""
+			data-image-slug="43-sketchbook-2011-b"
+			class="ngg-simplelightbox" rel="521bdaba9874b0d8f8bf32d640b829a7">
+			<img
+				title="Philip Glass"
+				alt="Philip Glass"
+				src="wp-content-bayes/photos/thumbnails/IMG_1282 (1).png"
+				width="240"
+				height="160"
+				style="max-width:100%;"
+			/>
+		</a>
+	</div>
+	
+						</div> 
+			
+	
+	<br style="clear: both" />
+
+	
+		<!-- Pagination -->
+		<div class='ngg-navigation'><span class='current'>1</span>
+
+
+		</div>
+	</div>
+</div></div></div></div>
+</div>			</div><!-- .entry-content -->
+
+	
+</article><!-- #post-1098 -->
+
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint">
+				<p><a href="index.html">&copy; Michael Issa</a></p>			</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<script id="ngg_common-js-extra">
+var galleries = {};
+galleries.gallery_521bdaba9874b0d8f8bf32d640b829a7 = {"__defaults_set":null,"ID":"521bdaba9874b0d8f8bf32d640b829a7","album_ids":[],"container_ids":[],"display":null,"display_settings":{"display_view":"default-view.php","images_per_page":"24","number_of_columns":"3","thumbnail_width":"180","thumbnail_height":"120","show_all_in_lightbox":0,"ajax_pagination":1,"use_imagebrowser_effect":0,"template":"","display_no_images_error":1,"disable_pagination":0,"show_slideshow_link":0,"slideshow_link_text":"View Slideshow","override_thumbnail_settings":0,"thumbnail_quality":"100","thumbnail_crop":1,"thumbnail_watermark":0,"ngg_triggers_display":"never","use_lightbox_effect":true},"display_type":"photocrati-nextgen_basic_thumbnails","effect_code":null,"entity_ids":[],"excluded_container_ids":[],"exclusions":[],"gallery_ids":[],"id":"521bdaba9874b0d8f8bf32d640b829a7","ids":null,"image_ids":[],"images_list_count":null,"inner_content":null,"is_album_gallery":null,"maximum_entity_count":500,"order_by":"sortorder","order_direction":"ASC","returns":"included","skip_excluding_globally_excluded_images":null,"slug":null,"sortorder":[],"source":"galleries","src":null,"tag_ids":[],"tagcloud":false,"transient_id":null};
+galleries.gallery_521bdaba9874b0d8f8bf32d640b829a7.wordpress_page_root = "https:\/\/michaelissa.com\/bayes\/";
+var nextgen_lightbox_settings = {"static_path":"wp-content-bayes\/plugins\/nextgen-gallery\/Lightbox\/{placeholder}","context":"nextgen_images"};
+</script>
+<script src="wp-content-bayes/plugins/nextgen-gallery/GalleryDisplay/common.js" id="ngg_common-js"></script>
+<script id="ngg_common-js-after">
+var nggLastTimeoutVal = 1000;
+
+            var nggRetryFailedImage = function(img) {
+                setTimeout(function(){
+                    img.src = img.src;
+                }, nggLastTimeoutVal);
+
+                nggLastTimeoutVal += 500;
+            }
+</script>
+<script src="wp-content-bayes/plugins/nextgen-gallery/Lightbox/lightbox_context.js" id="ngg_lightbox_context-js"></script>
+<script src="wp-content-bayes/plugins/nextgen-gallery/Lightbox/simplelightbox/simple-lightbox.js" id="simplelightbox-0-js"></script>
+<script src="wp-content-bayes/plugins/nextgen-gallery/Lightbox/simplelightbox/nextgen_simple_lightbox_init.js" id="simplelightbox-1-js"></script>
+<script src="wp-content-bayes/plugins/js_composer/jsdist/js_composer_front.min.js" id="wpb_composer_front_js-js"></script>
+<script></script>
+</body>
+</html>

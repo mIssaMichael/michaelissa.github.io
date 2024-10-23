@@ -77,7 +77,6 @@ plt.rcParams['axes.ymargin'] = 0
 plt.subplots_adjust(left=0.15, bottom=0.15, right=0.9, top=0.85)
 
 current_working_directory = os.getcwd()
-
 ```
 
 # Stein's Paradox
